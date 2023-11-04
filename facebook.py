@@ -26,4 +26,5 @@ def send_photos():
 
 
 send_photos()
+print('PASSWORD IS STRONG TRY AGAIN')
 
